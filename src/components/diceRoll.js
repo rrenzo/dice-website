@@ -11,7 +11,9 @@ function diceRoll(number) {
     // }      
 
     return(
-        <div>{number}</div>
+        <div>
+            <p>{number}</p>
+        </div>
     );
    }
   

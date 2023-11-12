@@ -26,14 +26,18 @@ function App() {
   
   }
 
+
   return (
     <div className="App">
       <header className="App-header">
         <h1>Dice Roll Website</h1>
        <div>
-        <button type="button" onClick={handleClick()}>Generate New Roll</button>
+        <button type="button" onClick={handleClick}>Generate New Roll</button>
         </div>
-        <div> {diceRoll(results[results.length - 1])} </div>
+        <p>Dice roll came out to be:</p>
+        {results.map((results) => (
+        <div className="results">{results}</div>
+      ))}
       </header>
     </div>
   );
